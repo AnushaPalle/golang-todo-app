@@ -20,7 +20,7 @@ type Todo struct {
 
 func main() {
 	// Connect to the PostgreSQL database
-	db, err = gorm.Open("postgres", "host=localhost user=root password=secret dbname=todo_app sslmode=disable")
+	db, err = gorm.Open("postgres", "host=localhost user=root password=secret dbname=todo_db sslmode=disable")
 	if err != nil {
 		log.Fatal(err)
 	}
